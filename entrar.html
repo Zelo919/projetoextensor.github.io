@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar — Projeto Guri</title>
+    <link rel="icon" type="image/x-icon" href="imagens/icoguri.ico">
+    <link rel="stylesheet" href="./css/entrar.css">
+</head>
+
+<body>
+    <header class="interface">
+        <h2 hidden>aba</h2>
+            <a href="index.html">
+                <img class="logo_amauris" src="imagens/logo-guri-008dd78d4337c4f74dc21718ceff88fc6e9acf7d.png" alt="logotipo do site">
+            </a>
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="matricula.html">Matrícula</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+
+        <div class="bt-entrar">
+            <a href="entrar.html">Entrar</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu-mobile">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="matricula.html">Matrícula</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li class="menu-mobile-entrar"><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+
+        <label for="menu-toggle" class="menu-overlay"></label>
+    </header>
+
+    <main>
+        <div class="card">
+            <!-- Painel esquerdo laranja -->
+            <div class="card-lado card-login">
+                <p class="boas-vindas">Bom ter você de volta!</p>
+                <button class="btn-entrar-card" id="btn-ir-login">ENTRAR</button>
+            </div>
+
+            <!-- Painel direito — cadastro (visível por padrão) -->
+            <div class="card-lado card-cadastro" id="painel-cadastro">
+                <h1>Crie a sua conta!</h1>
+                <input type="text" placeholder="Nome" autocomplete="name">
+                <input type="email" placeholder="E-mail" autocomplete="email">
+                <input type="password" placeholder="Senha" autocomplete="new-password">
+                <button class="btn-cadastrar">CADASTRAR</button>
+            </div>
+
+            <!-- Painel direito — login (oculto por padrão) -->
+            <div class="card-lado card-form-login" id="painel-login">
+                <h1>Bem-vindo de volta!</h1>
+                <input type="email" placeholder="E-mail" autocomplete="email">
+                <input type="password" placeholder="Senha" autocomplete="current-password">
+                <button class="btn-cadastrar">ENTRAR</button>
+                <a href="#" class="link-esqueci">Esqueci minha senha</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <h2 hidden>rodapé</h2>
+            <div class="rdpimg">
+                <h3 hidden>logos</h3>
+                <img src="imagens/logosr.svg" alt="logotipo do município" height="70">
+                <img src="imagens/logo_gov_sp.f5b7211d.webp" alt="logotipo do governo" height="40">
+            </div>
+            <ul class="contatosrdp">
+                <li><a href="#">Endereço: Rua Araçaí, 250, Vila Aguiar (São Roque, SP)</a></li>
+                <li><a href="#">Telefone: (11) 3367-9040</a></li>
+                <li><a href="#">E-mail: sau@santamarcelinacultura.org.br</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
