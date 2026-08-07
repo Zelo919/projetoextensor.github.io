@@ -282,33 +282,37 @@ main {
     }
 }
 
-
 @media (max-width: 600px) {
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 16px;
-        height: 70px;
+        height: 70px; 
     }
 
     body {
-        padding-top: 80px;
+        padding-top: 80px; 
     }
 
     .logo_amauris {
         height: 2.5rem;
     }
 
+    
     .interface {
         padding: 0;
         width: 100%;
         justify-content: space-between;
     }
 
-    main {
-        padding: 40px 16px;
-        align-items: flex-start;
+    .navegacao {
+        display: none; 
+    }
+
+    .bt-entrar a {
+        padding: 9px 20px;
+        font-size: 0.9rem;
     }
 
     .card {
@@ -352,11 +356,18 @@ main {
 }
 
 @media (max-width: 600px) {
+
     .bt-entrar,
     .menu .navegacao {
         display: none;
     }
 
+    
+    .menu-toggle {
+        display: none; 
+    }
+
+    
     .hamburguer {
         display: flex;
         flex-direction: column;
@@ -378,6 +389,7 @@ main {
         transform-origin: center;
     }
 
+    
     .menu-toggle:checked + .hamburguer span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -389,6 +401,7 @@ main {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    
     .menu-mobile {
         display: block;
         position: fixed;
@@ -401,7 +414,7 @@ main {
         box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15);
         z-index: 1050;
         padding-top: 90px;
-        transform: translateX(100%);
+        transform: translateX(100%);   /* começa fora da tela */
         transition: transform 0.35s ease;
     }
 
@@ -426,6 +439,7 @@ main {
         color: rgb(255, 95, 25);
     }
 
+    
     .menu-mobile-entrar a {
         margin: 20px 28px 0;
         display: inline-block !important;
@@ -443,23 +457,25 @@ main {
         color: #fff !important;
     }
 
+    
     .menu-overlay {
         display: block;
         position: fixed;
-        inset: 0;
+        inset: 0;              
         background: rgba(0, 0, 0, 0.45);
         z-index: 1040;
         opacity: 0;
-        pointer-events: none;
+        pointer-events: none;  
         transition: opacity 0.35s ease;
     }
 
+    
     .menu-toggle:checked ~ .menu-mobile {
         transform: translateX(0);
     }
 
     .menu-toggle:checked ~ .menu-overlay {
         opacity: 1;
-        pointer-events: all;
+        pointer-events: all;  
     }
 }
